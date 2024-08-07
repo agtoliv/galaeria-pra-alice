@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: purple;
+    padding: 16px 0; /*espaçamento */
+    color: #fff;
+    display: flex;/*deixa o botão ao lado de "galeria de fotos"*/
+    border-bottom: 16px solid blue;
+    justify-content: center; /*deixa o conteúdo centralizado*/
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+header button{
+    margin-left: 16px;
+}
+
+form{
+    background-color: gray;
+    padding: 24px 0;
+    text-align: center; /*pq aqui é txt alignt e não justify-contente? */
+    display:none;
+}
+
+form h2{
+    margin-bottom: 16px;
+}
+
+input, button {
+    padding: 8px;
+}
+
+button{
+    background-color: green;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+}
+
+#botao-cancelar{
+    background-color: red;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;/*quando chega no limite, cria-se uma nova linha */
+    justify-content: center;
+}
+
+ul li{
+    max-width: 25%;
+    list-style: none;
+    position: relative;
+    max-height: 500px;
+    overflow-y: hidden; /*todo conteudo q passar do limite fica escondido */
+
+}
+
+ul li img{
+    width: 100%;
+    
+}
+
+.overlay-imagem-link{
+    padding: 16px;
+    background-color: rgba(0,0,0,0.7);
+    position: absolute; /*para q ele não vaze do layout, o elemento pai precisa ter o position relative */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0; /*aumenta de forma decimal, começa no 0 (não vemos) e vai até o 1 */
+    transition: all ease .5s;
+}
+
+.overlay-imagem-link a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul li:hover .overlay-imagem-link{
+    opacity: 1;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Galeria de Fotos</h1>
+        <button type="button">Nova imagem +</button>
+    </header>
+    <form>
+        <h2>Inserir nova imagem</h2>
+        <input list="imageOptions" type="text" required placeholder="Escolha uma foto" id="endereco-imagem-nova"> 
+        <datalist id="imageOptions">
+            <option value="foto1.jpeg">Imagem 1</option>
+            <option value="foto2.jpeg">Imagem 2</option>
+            <option value="foto3.jpeg">Imagem 3</option>
+            <option value="foto4.jpeg">Imagem 3</option>
+            <option value="foto5.jpeg">Imagem 3</option>
+            <option value="foto6.jpeg">Imagem 3</option>
+            <option value="foto7.jpeg">Imagem 3</option>
+            <option value="foto8.jpeg">Imagem 3</option>
+            <option value="foto9.jpeg">Imagem 3</option>
+            <option value="foto10.jpeg">Imagem 3</option>
+            <option value="foto11.jpeg">Imagem 3</option>
+            <option value="foto12.jpeg">Imagem 3</option>
+            <option value="foto13.jpeg">Imagem 3</option>
+            <option value="foto14.jpeg">Imagem 3</option>
+            <option value="foto15.jpeg">Imagem 3</option>
+            <option value="foto16.jpeg">Imagem 3</option>
+            <option value="foto17.jpeg">Imagem 3</option>
+        </datalist>
+        <button type="submit" id="addImage">Adicionar</button>
+        <button type="reset" id="botao-cancelar">Cancelar</button>
+    </form>
+    <ul id="imageGallery">
+        <li>
+            <img src="" alt=""/>
+            <div class="overlay-imagem-link">
+                <a href="" title="ver imagem em tamanho real" target="_blank">Ver imagem em tamanho real</a>
+            </div>
+        </li>
+        <li>
+            <img src="" alt=""/>
+            <div class="overlay-imagem-link">
+                <a href="" title="ver imagem em tamanho real" target="_blank">Ver imagem em tamanho real</a>
+            </div>
+        </li>
+        <li>
+            <img src="" alt=""/>
+            <div class="overlay-imagem-link">
+                <a href="" title="ver imagem em tamanho real" target="_blank">Ver imagem em tamanho real</a>
+            </div>
+        </li>
+    </ul>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+
+</html>
